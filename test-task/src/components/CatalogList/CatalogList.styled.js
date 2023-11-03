@@ -1,45 +1,23 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
-export const StyledMoviesList = styled.section`
+export const StyledCarsList = styled.section`
   padding-top: 16px;
-
-  @media (min-width: 768px) {
-    padding-top: 36px;
-  }
-  @media (min-width: 1280px) {
-    padding-top: 48px;
-  }
+  padding-bottom: 100px;
+  padding-top: 50px;
 `;
 
-
 export const StyledCatalogList = styled.ul`
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-  padding: 0;
-  list-style-type: none;
-  @media (min-width: 768px) {
-    row-gap: 28px;
-  }
-  @media (min-width: 1280px) {
-    row-gap: 28px;
-  }
+  row-gap: 50px;
+  column-gap: 29px;
 `;
 
 export const StyledCatalogContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
-  width: 320px;
-  padding: 20px;
-  @media (min-width: 768px) {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @media (min-width: 1280px) {
-    width: 1280px;
-  }
+  width: 1184px;
 `;
 
 export const StyledWeeklyTrendsHeader = styled.div`
@@ -49,4 +27,27 @@ export const StyledWeeklyTrendsHeader = styled.div`
   margin-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
+`;
+
+export const PaginationBtn = styled.button`
+  display: block;
+  margin: auto;
+  border: none;
+  background: transparent;
+  color: #3470ff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  text-decoration-line: underline;
+  &:hover {
+    color: #0b44cd;
+  }
+  &:focus {
+    color: #0b44cd;
+  }
+  &:active {
+    color: #0b44cd;
+  }
 `;

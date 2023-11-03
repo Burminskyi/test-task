@@ -1,25 +1,29 @@
-
+import { CatalogCart } from "../CatalogCart/CatalogCart";
 import { SearchParamsForm } from "../SearchForm/SearchParamsForm";
 import {
+  PaginationBtn,
+  StyledCarsList,
   StyledCatalogContainer,
   StyledCatalogList,
-  StyledMoviesList,
 } from "./CatalogList.styled";
-
 
 export const CatalogList = () => {
   return (
-    <StyledMoviesList>
+    <StyledCarsList>
       <StyledCatalogContainer>
         <SearchParamsForm />
-        <>
-          <StyledCatalogList>
-            {/* {weeklyTrendingMovies.map((movie) => (
-              <MoviesGalleryItem key={movie.id} movie={movie} />
-            ))} */}
-          </StyledCatalogList>
-        </>
+        <StyledCatalogList>
+          <CatalogCart />
+          <CatalogCart />
+          <CatalogCart />
+          <CatalogCart />
+          <CatalogCart />
+          <CatalogCart />
+          <CatalogCart />
+          <CatalogCart />
+        </StyledCatalogList>
+        <PaginationBtn type="button">Load more</PaginationBtn>
       </StyledCatalogContainer>
-    </StyledMoviesList>
+    </StyledCarsList>
   );
 };

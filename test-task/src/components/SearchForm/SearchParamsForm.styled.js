@@ -5,13 +5,7 @@ export const StyledSearchForm = styled.form`
   align-items: end;
   justify-content: center;
   gap: 18px;
-  margin-bottom: 16px;
-  @media (min-width: 768px) {
-    margin-bottom: 36px;
-  }
-  @media (min-width: 1280px) {
-    margin-bottom: 48px;
-  }
+  margin-bottom: 50px;
 `;
 
 export const StyledSearchFormInput = styled.input`
