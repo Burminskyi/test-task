@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 export const StyledHeroSection = styled.section`
   position: relative;
@@ -45,15 +45,13 @@ export const StyledHeroBtnWrap = styled.div`
   justify-content: space-between;
 `;
 
-
 export const StyledMovieCaption = styled.p`
-font-size: 28px;
-margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 20px;
 `;
-export const StyledHeroTitle = styled.h3`
+export const StyledHeroTitle = styled.p`
   color: white;
   margin-bottom: 32px;
-  @media (max-width: 767px) {
-    font-size: 32px;
-  }
+  font-size: 36px;
+  font-weight: 500;
 `;

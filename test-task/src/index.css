@@ -80,3 +80,10 @@ a {
 main {
   flex: 1 1 auto;
 }
+
+select {
+  -webkit-appearance: none; /* Для браузеров на базе WebKit (например, Chrome, Safari) */
+  -moz-appearance: none; /* Для браузеров на базе Gecko (например, Firefox) */
+  appearance: none; /* Стандартное свойство, применяется в большинстве современных браузеров */
+  background: transparent; /* Если нужно убрать фон внутри выпадающего списка */
+}
