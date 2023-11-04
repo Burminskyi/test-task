@@ -1,5 +1,4 @@
 import {
-  StyledHeroContainer,
   StyledHeroInfoWrap,
   StyledHeroSection,
   StyledHeroTitle,
@@ -10,7 +9,7 @@ import { StyledBrandName, StyledBrandName2 } from '../NavBar/NavBar.styled';
 import { Container } from 'react-bootstrap';
 
 
-const Hero = () => {
+export const Hero = () => {
 
   return (
     <StyledHeroSection>
@@ -35,5 +34,3 @@ const Hero = () => {
     </StyledHeroSection>
   );
 };
-
-export default Hero;

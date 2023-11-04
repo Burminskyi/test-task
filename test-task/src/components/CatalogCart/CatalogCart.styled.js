@@ -1,6 +1,7 @@
 import { styled } from "styled-components";
 
 export const StyledCatalogCart = styled.div`
+  position: relative;
   display: flex;
   width: 274px;
   height: 426px;
@@ -74,3 +75,10 @@ export const StyledCartBtn = styled.button`
   }
 `;
 
+export const FavoriteBtn = styled.button`
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: transparent;
+  border: none;
+`;

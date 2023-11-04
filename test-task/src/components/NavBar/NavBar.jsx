@@ -1,5 +1,5 @@
-import { Navbar, Container, Form } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Navbar, Container, Form } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 import {
   StyledBrandName,
@@ -10,9 +10,9 @@ import {
   StyledNavbarLogo,
   StyledSwitcherWrap,
   StyledThemeSwitcher,
-} from './NavBar.styled';
+} from "./NavBar.styled";
 
-import logo from './header-logo.svg';
+import logo from "./header-logo.svg";
 // import { useDispatch } from 'react-redux';
 // import { setThemeStyle } from 'redux/Theme/slice';
 
@@ -55,7 +55,7 @@ const NavBar = () => {
               Catalog
             </StyledNavLink>
             <StyledNavLink
-              to="/library"
+              to="/favorites"
               style={({ isActive }) => {
                 return {
                   fontWeight: isActive ? "600" : "",
@@ -63,7 +63,7 @@ const NavBar = () => {
                 };
               }}
             >
-              My library
+              Favorites
             </StyledNavLink>
           </StyledNavList>
           <StyledSwitcherWrap>

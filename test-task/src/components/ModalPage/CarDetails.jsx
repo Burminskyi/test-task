@@ -1,4 +1,3 @@
-import { useDispatch } from "react-redux";
 import {
   StyledCarDescription,
   StyledCarDetailsContainer,
@@ -13,7 +12,6 @@ import {
 } from "../CatalogCart/CatalogCart.styled";
 
 export const CarDetails = ({ data }) => {
-  const dispatch = useDispatch();
 
   const conditions = data.rentalConditions.split('\n');
 

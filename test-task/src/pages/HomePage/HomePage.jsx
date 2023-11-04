@@ -1,5 +1,6 @@
+import { Hero } from "../../components/Hero/Hero";
 import HomePageDescription from "../../components/HomePageDescription/HomePageDescription";
-import Hero from "../../components/Hero/Hero";
+
 
 
 const HomePage = () => {
