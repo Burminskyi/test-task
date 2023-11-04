@@ -5,15 +5,15 @@ export const StyledCatalogCart = styled.div`
   width: 274px;
   height: 426px;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 28px;
-  flex-shrink: 0;
 `;
 
 export const StyledCartImage = styled.img`
   width: 274px;
   height: 268px;
   border-radius: 14px;
+  object-fit: contain;
   background: linear-gradient(
       180deg,
       rgba(18, 20, 23, 0.5) 2.5%,
@@ -67,6 +67,10 @@ export const StyledCartBtn = styled.button`
   line-height: 20px; /* 142.857% */
   &:hover {
     background: #0b44cd;
+  }
+  &.modalBtn {
+    padding: 12px 50px;
+    width: fit-content;
   }
 `;
 

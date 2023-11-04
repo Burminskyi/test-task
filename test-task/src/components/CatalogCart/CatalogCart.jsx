@@ -1,27 +1,39 @@
-import { StyledCarInfoWrap, StyledCarTagsWrap, StyledCartBtn, StyledCartImage, StyledCatalogCart } from "./CatalogCart.styled";
+import { useState } from "react";
+import {
+  StyledCarInfoWrap,
+  StyledCarTagsWrap,
+  StyledCartBtn,
+  StyledCartImage,
+  StyledCatalogCart,
+} from "./CatalogCart.styled";
+import { ModalPage } from "../ModalPage/ModalPage";
 
-export const CatalogCart = () => {
+export const CatalogCart = ({ data }) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const onModal = () => {
+    setShowModal((prev) => !prev);
+  };
+
   return (
+    <>
     <StyledCatalogCart>
-      <StyledCartImage
-        src="https://w.forfun.com/fetch/a4/a48610bf58b05618a5470c6da6ecde49.jpeg"
-        alt="car"
-      />
+      <StyledCartImage src={data.img} alt="car" />
       <StyledCarInfoWrap>
-        <p>Buick Enclave, 2008</p>
-        <p>$40</p>
+        <p>{`${data.make} ${data.model}, ${data.year}`}</p>
+        <p>{data.rentalPrice}</p>
       </StyledCarInfoWrap>
       <StyledCarTagsWrap>
-        <p>Kiev</p>
-        <p>Ukraine</p>
-        <p>Luxury Car Rentals</p>
-        <p>Premium</p>
-        <p>Suv</p>
-        <p>Enclave</p>
-        <p>9582</p>
-        <p>Power liftgate</p>
+        <p>{data.address}</p>
+        <p>{data.rentalCompany}</p>
+        <p>{data.type}</p>
+        <p>{data.make}</p>
+        <p>{data.mileage}</p>
       </StyledCarTagsWrap>
-      <StyledCartBtn type="button">Learn More</StyledCartBtn>
+      <div></div>
+      <StyledCartBtn type="button" onClick={onModal}>Learn More</StyledCartBtn>
     </StyledCatalogCart>
+    {showModal && <ModalPage data={data} onClose={onModal} />}
+    </>
   );
 };

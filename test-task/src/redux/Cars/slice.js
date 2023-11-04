@@ -35,7 +35,7 @@ const carsSlice = createSlice({
       .addCase(getCarsThunk.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.payload;
-      })
+      }),
 });
 
 export const { setFavoriteCars, removeFromFavoriteCars } = carsSlice.actions;

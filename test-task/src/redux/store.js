@@ -28,7 +28,7 @@ const carsPersistConfig = {
 
 export const store = configureStore({
   reducer: {
-    movies: persistReducer(carsPersistConfig, carsReducer),
+    cars: persistReducer(carsPersistConfig, carsReducer),
     // theme: persistReducer(themesPersistConfig, themeReducer),
   },
   middleware: (getDefaultMiddleware) =>
