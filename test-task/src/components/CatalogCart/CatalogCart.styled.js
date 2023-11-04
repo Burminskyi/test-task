@@ -38,8 +38,8 @@ export const StyledCarInfoWrap = styled.div`
 export const StyledCarTagsWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
-  row-gap: 6px;
-  column-gap: 4px;
+  row-gap: 4px;
+  column-gap: 12px;
   color: #fff;
   font-family: Manrope;
   font-size: 12px;
