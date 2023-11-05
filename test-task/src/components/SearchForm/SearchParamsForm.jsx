@@ -8,37 +8,39 @@ import {
   // StyledSearchFormInputWrap,
 } from "./SearchParamsForm.styled";
 
-export const SearchParamsForm = (
-  { makes, onSelectMake }
-) => {
+export const SearchParamsForm = ({
+  makes,
+  priceRange,
+  onSelectMake,
+  onSelectPrice,
+}) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    onSelectMake(document.getElementById('carName').value);
+    onSelectMake(document.getElementById("carName").value);
+    onSelectPrice(document.getElementById("carPrice").value);
   };
 
   return (
     <StyledSearchForm onSubmit={handleFormSubmit}>
       <StyledCarSelectWrap>
         <StyledCarSelectTitle>Car brand</StyledCarSelectTitle>
-        <StyledCarSelect
-          className="carName"
-          name="carName"
-          id="carName"
-        >
+        <StyledCarSelect className="carName" name="carName" id="carName">
           <option value="all">All</option>
           {makes && makes.map((make) => <option value={make}>{make}</option>)}
         </StyledCarSelect>
       </StyledCarSelectWrap>
+      {priceRange && (
+        <StyledCarSelectWrap>
+          <StyledCarSelectTitle>Price/ 1 hour</StyledCarSelectTitle>
+          <StyledCarSelect className="carPrice" name="carPrice" id="carPrice">
+            <option value="all">All</option>
+            {priceRange.map((price) => (
+              <option value={price}>{price}</option>
+            ))}
+          </StyledCarSelect>
+        </StyledCarSelectWrap>
+      )}
       {/* <StyledCarSelectWrap>
-        <StyledCarSelectTitle>Price/ 1 hour</StyledCarSelectTitle>
-        <StyledCarSelect className="carPrice" name="carPrice" id="carPrice">
-          <option value="10">10</option>
-          <option value="20">20</option>
-          <option value="30">30</option>
-          <option value="40">40</option>
-        </StyledCarSelect>
-      </StyledCarSelectWrap>
-      <StyledCarSelectWrap>
         <StyledCarSelectTitle>Сar mileage / km</StyledCarSelectTitle>
         <StyledSearchFormInputWrap>
           <StyledSearchFormInput
