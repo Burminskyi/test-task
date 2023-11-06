@@ -11,7 +11,6 @@ export const getCarsThunk = createAsyncThunk(
 
     try {
       const { data } = await $instance.get('/adverts');
-      console.log('data: ', data);
 
       return data;
     } catch (error) {
