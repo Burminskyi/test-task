@@ -74,3 +74,11 @@ select {
   appearance: none; /* Стандартное свойство, применяется в большинстве современных браузеров */
   background: transparent; /* Если нужно убрать фон внутри выпадающего списка */
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.scrollable {
+  overflow: auto;
+}
