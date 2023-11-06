@@ -17,7 +17,16 @@ export const StyledCatalogList = styled.ul`
 export const StyledCatalogContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
-  width: 1184px;
+  width: 304px;
+  @media (min-width: 624px) {
+    width: 577px;
+  }
+  @media (min-width: 992px) {
+    width: 880px;
+  }
+  @media (min-width: 1400px) {
+    width: 1184px;
+  }
 `;
 
 export const StyledWeeklyTrendsHeader = styled.div`

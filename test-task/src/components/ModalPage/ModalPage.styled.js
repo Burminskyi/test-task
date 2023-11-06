@@ -33,6 +33,7 @@ export const StyledModal = styled.div`
 `;
 
 export const StyledCarDetailsContainer = styled.div`
+color: #fff;
 display: flex;
 flex-direction: column;
 justify-content: space-between;

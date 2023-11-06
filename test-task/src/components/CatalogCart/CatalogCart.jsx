@@ -64,7 +64,6 @@ export const CatalogCart = ({ data }) => {
           <p>{data.make}</p>
           <p>{data.mileage}</p>
         </StyledCarTagsWrap>
-        <div></div>
         <StyledCartBtn type="button" onClick={onModal}>
           Learn More
         </StyledCartBtn>

@@ -1,5 +1,5 @@
 @import-normalize; /* bring in normalize.css styles */
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 :root {
   --black: #111111;
@@ -8,32 +8,34 @@
   --gray-light: #b7b7b7;
   --white: #ffffff;
   --silver: #f8f8f8;
-  --orange: #f87719;
+  --blue: #3470ff;
   --bgmenu: #171717;
-  --dropdown: #1C1C1C;
+  --dropdown: #1c1c1c;
   --gradient-1: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
-  --gradient-2: linear-gradient(141.22deg,
-      #f84119 9.4%,
-      rgba(248, 159, 25, 0.68) 91.91%);
+  --gradient-2: linear-gradient(
+    141.22deg,
+    #f84119 9.4%,
+    rgba(248, 159, 25, 0.68) 91.91%
+  );
 }
 
 body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto-400', sans-serif;
+  font-family: "Roboto-400", sans-serif;
   background: var(--black);
   color: var(--white);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 

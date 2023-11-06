@@ -8,6 +8,13 @@ export const StyledCatalogCart = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  border-radius: 14px;
+  &:hover {
+    transform: scale(1.02) translateZ(0);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 20px var(--blue);
+    cursor: pointer;
+  }
 `;
 
 export const StyledCartImage = styled.img`
@@ -27,8 +34,9 @@ export const StyledCarInfoWrap = styled.div`
   display: flex;
   justify-content: space-between;
   width: inherit;
+  padding-left: 10px;
+  padding-right: 10px;
 
-  color: #fff;
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
@@ -37,11 +45,12 @@ export const StyledCarInfoWrap = styled.div`
 `;
 
 export const StyledCarTagsWrap = styled.div`
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 4px;
   column-gap: 12px;
-  color: #fff;
   font-family: Manrope;
   font-size: 12px;
   font-style: normal;

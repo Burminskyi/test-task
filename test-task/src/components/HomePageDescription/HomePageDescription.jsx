@@ -2,45 +2,29 @@ import { Container } from "react-bootstrap";
 import { StyledHomeHeader, StyledHomeText } from "../../pages/HomePage/HomePage.styled";
 import { StyledBrandName, StyledBrandName2 } from "../NavBar/NavBar.styled";
 import { StyledHomeInfo } from "./HomePageDescription.styled";
+import { Link } from "react-router-dom";
 
 const HomePageDescription = () => {
   return (
     <StyledHomeInfo>
       <Container>
         <StyledHomeHeader>
-          Вітаємо у <StyledBrandName>Ukr</StyledBrandName>
+        Welcome to <StyledBrandName className="brandMainText">Ukr</StyledBrandName>
           <StyledBrandName2>Sharing</StyledBrandName2>!
         </StyledHomeHeader>
         <StyledHomeText>
-          <h5>
-            Ласкаво просимо до нашого застосунку для прокату автомобілів в
-            Україні! Ми знаємо, що подорожі - це не просто переміщення з одного
-            місця в інше, а справжня пригода, і ми зробимо все, щоб зробити цю
-            пригоду незабутньою.
-          </h5>
-
-          <h4>Наша компанія пропонує вам:</h4>
-          <p>
-            🚗 Великий та різноманітний вибір автомобілів різних марок та
-            моделей, щоб ви могли знайти ідеальний автомобіль для кожної вашої
-            потреби.
+          <p className="mainText">
+          Welcome to our car rental application in Ukraine! We understand that travel is not just about moving from one place to another. It's a real adventure, and we'll do everything to make this adventure unforgettable.
           </p>
-          <p>
-            💰 Привабливі ціни та гнучкі умови оренди. Ми розуміємо, що кожен
-            має свій бюджет, тому пропонуємо вигідні тарифи та опції оплати.
-          </p>
-          <p>
-            🌍 Можливість досліджувати нові місця та відкривати незабутні шляхи.
-            Наші автомобілі готові вас відвести до кожного куточка України.
-          </p>
-          <p>
-            🛠️ Висока технічна готовність та безпека. Наші автомобілі завжди на
-            дорозі та готові до подорожі.
-          </p>
-          <p>
-            ❤️ Легкий та зручний процес бронювання. За кілька кроків ви зможете
-            забронювати автомобіль своєї мрії.
-          </p>
+          <p className="listHeader">Our company offers you:</p>
+          <ul>
+            <li>🚗 A large and diverse selection of cars from various brands and models, so you can find the perfect car for all your needs.</li>
+            <li>💰 Attractive prices and flexible rental terms. We understand that everyone has their own budget, so we offer competitive rates and payment options.</li>
+            <li>🌍 The opportunity to explore new places and discover unforgettable routes. Our cars are ready to take you to every corner of Ukraine.</li>
+            <li>🛠️ High technical readiness and safety. Our cars are always on the road and ready for the journey.</li>
+            <li>❤️ An easy and convenient booking process. In a few steps, you can reserve the car of your dreams.</li>
+          </ul>
+          <p className="navText">Browse our <Link className="textLink" to="catalog">catalog</Link> and select the suitable car</p>
         </StyledHomeText>
       </Container>
     </StyledHomeInfo>

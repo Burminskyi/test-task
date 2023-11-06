@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import {
   StyledBrandName,
+  StyledNavBurger,
   StyledNavLink,
   StyledNavList,
   StyledNavbar,
@@ -13,12 +14,12 @@ import {
 } from "./NavBar.styled";
 
 import logo from "./header-logo.svg";
-// import { useDispatch } from 'react-redux';
-// import { setThemeStyle } from 'redux/Theme/slice';
+import { useDispatch } from "react-redux";
+import { setThemeStyle } from "../../redux/Theme/slice";
 
 const NavBar = () => {
-  // const dispatch = useDispatch();
-  // const setTheme = () => dispatch(setThemeStyle());
+  const dispatch = useDispatch();
+  const setTheme = () => dispatch(setThemeStyle());
 
   return (
     <StyledNavbar collapseOnSelect expand="lg">
@@ -29,7 +30,7 @@ const NavBar = () => {
             <StyledBrandName>Ukr</StyledBrandName>Sharing
           </StyledNavbarBrand>
         </NavLink>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <StyledNavBurger aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <StyledNavList className="me-auto">
             <StyledNavLink
@@ -37,7 +38,7 @@ const NavBar = () => {
               style={({ isActive }) => {
                 return {
                   fontWeight: isActive ? "600" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "var(--blue)" : "",
                 };
               }}
             >
@@ -48,7 +49,7 @@ const NavBar = () => {
               style={({ isActive }) => {
                 return {
                   fontWeight: isActive ? "600" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "var(--blue)" : "",
                 };
               }}
             >
@@ -59,7 +60,7 @@ const NavBar = () => {
               style={({ isActive }) => {
                 return {
                   fontWeight: isActive ? "600" : "",
-                  color: isActive ? "orange" : "",
+                  color: isActive ? "var(--blue)" : "",
                 };
               }}
             >
@@ -69,7 +70,7 @@ const NavBar = () => {
           <StyledSwitcherWrap>
             <Form>
               <StyledThemeSwitcher
-                // onClick={setTheme}
+                onClick={setTheme}
                 type="switch"
                 id="custom-switch"
                 label="Change theme"

@@ -12,7 +12,7 @@ import {
 import storage from 'redux-persist/lib/storage';
 
 import { carsReducer } from "./Cars/slice";
-// import { themeReducer } from './Theme/slice';
+import { themeReducer } from './Theme/slice';
 
 const carsPersistConfig = {
   key: "cars",
@@ -20,16 +20,16 @@ const carsPersistConfig = {
   whitelist: ["favoriteCars"],
 };
 
-// const themesPersistConfig = {
-//   key: 'theme',
-//   storage,
-//   whitelist: ['themeStyle'],
-// };
+const themesPersistConfig = {
+  key: 'theme',
+  storage,
+  whitelist: ['themeStyle'],
+};
 
 export const store = configureStore({
   reducer: {
     cars: persistReducer(carsPersistConfig, carsReducer),
-    // theme: persistReducer(themesPersistConfig, themeReducer),
+    theme: persistReducer(themesPersistConfig, themeReducer),
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

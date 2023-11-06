@@ -2,10 +2,17 @@ import { styled } from "styled-components";
 
 export const StyledSearchForm = styled.form`
   display: flex;
-  align-items: end;
+  width: 274px;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 18px;
   margin-bottom: 50px;
+  @media (min-width: 624px) {
+    flex-direction: row;
+    width: 100%;
+    align-items: end;
+  }
 `;
 
 export const StyledSearchFormInput = styled.input`
@@ -46,7 +53,10 @@ export const StyledCarSelect = styled.select`
     width: 224px;
   }
   &.carPrice {
-    width: 125px;
+    width: 224px;
+    @media (min-width: 624px) {
+      width: 125px;
+    }
   }
 `;
 
@@ -71,7 +81,7 @@ export const StyledSearchFormInputWrap = styled.div`
 export const StyledSearchBtn = styled.button`
   border: none;
   height: 48px;
-  width: 136px;
+  width: 224px;
   display: flex;
   padding: 14px 44px;
   justify-content: center;
@@ -85,5 +95,8 @@ export const StyledSearchBtn = styled.button`
   line-height: 20px; /* 142.857% */
   &:hover {
     background: #0b44cd;
+  }
+  @media (min-width: 624px) {
+    width: 136px;
   }
 `;
