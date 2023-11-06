@@ -59,6 +59,7 @@ To work with the list of advertisements, a custom backend is created using the U
 json
 
 {
+
   "id": "unique_id",
   
   "year": "car_year",
@@ -90,6 +91,7 @@ json
   "rentalConditions": "rental_conditions",
   
   "mileage": "car_mileage"
+  
 }
 
 <h3>Additional Features:</h3>
