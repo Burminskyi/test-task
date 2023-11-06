@@ -2,13 +2,13 @@ import {
   StyledCarDescription,
   StyledCarDetailsContainer,
   StyledFirstModalWrap,
+  StyledModalBtn,
   StyledModalImage,
   StyledSecondModalWrap,
 } from "./ModalPage.styled";
 import {
   StyledCarInfoWrap,
   StyledCarTagsWrap,
-  StyledCartBtn,
 } from "../CatalogCart/CatalogCart.styled";
 
 export const CarDetails = ({ data }) => {
@@ -50,9 +50,9 @@ export const CarDetails = ({ data }) => {
           ))}
         </StyledCarTagsWrap>
       </StyledSecondModalWrap>
-      <StyledCartBtn type="button" className="modalBtn">
+      <StyledModalBtn href={`tel:${'+380730000000'}`}>
         Rental car
-      </StyledCartBtn>
+      </StyledModalBtn>
     </StyledCarDetailsContainer>
   );
 };

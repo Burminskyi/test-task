@@ -75,12 +75,6 @@ export const StyledSwitcherWrap = styled(Nav)`
 export const StyledNavBurger = styled(Navbar.Toggle)`
   border-color: var(--blue);
   color: var(--blue);
-
-  &.svg {
-    stroke: var(--blue);
-    color: var(--blue);
-    fill: var(--blue);
-  }
 `;
 
 

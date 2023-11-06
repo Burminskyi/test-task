@@ -1,7 +1,10 @@
 import { useSelector } from "react-redux";
+
 import { selectFavoriteCars } from "../../redux/Cars/selectors";
+
 import { Hero } from "../../components/Hero/Hero";
 import { CatalogCart } from "../../components/CatalogCart/CatalogCart";
+
 import {
   StyledCarsList,
   StyledCatalogContainer,

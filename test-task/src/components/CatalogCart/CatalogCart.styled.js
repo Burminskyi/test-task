@@ -13,7 +13,6 @@ export const StyledCatalogCart = styled.div`
     transform: scale(1.02) translateZ(0);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 0 20px var(--blue);
-    cursor: pointer;
   }
 `;
 
@@ -83,6 +82,7 @@ export const StyledCartBtn = styled.button`
     width: fit-content;
   }
 `;
+
 
 export const FavoriteBtn = styled.button`
   position: absolute;

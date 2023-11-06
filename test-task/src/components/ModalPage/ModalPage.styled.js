@@ -22,7 +22,7 @@ export const StyledModal = styled.div`
   transform: translate(-50%, -50%);
   max-height: 100%;
   background-color: var(--black);
-  box-shadow: 1px 1px 14px 4px rgba(255, 107, 8, 0.42);
+  box-shadow: 1px 1px 14px 4px var(--blue);
   border-radius: 16px;
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -33,14 +33,19 @@ export const StyledModal = styled.div`
 `;
 
 export const StyledCarDetailsContainer = styled.div`
-color: #fff;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-  width: 541px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
   height: 752px;
-  padding: 40px;
+  padding: 40px 10px;
   margin: 0 auto;
+  @media (min-width: 600px) {
+    width: 541px;
+    height: 752px;
+    padding: 40px;
+  }
 `;
 
 export const StyledModalImage = styled.img`
@@ -75,4 +80,25 @@ export const StyledCloseModalBtn = styled(CloseButton)`
   position: absolute;
   right: 10px;
   top: 5px;
+`;
+
+export const StyledModalBtn = styled.a`
+  border: none;
+  display: flex;
+  padding: 12px 50px;
+  width: fit-content;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #3470ff;
+  color: var(--White, #fff);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+  &:hover {
+    background: #0b44cd;
+  }
 `;

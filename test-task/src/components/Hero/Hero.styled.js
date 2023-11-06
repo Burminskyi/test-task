@@ -9,22 +9,6 @@ export const StyledHeroSection = styled.section`
   );
 `;
 
-export const StyledHeroContainer = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-  padding-left: 20px;
-  padding-right: 20px;
-  @media (min-width: 768px) {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @media (min-width: 1280px) {
-    width: 1280px;
-  }
-`;
-
 export const StyledHeroInfoWrap = styled.div`
 padding-left: 15px;
 padding-right: 15px;
@@ -67,15 +51,6 @@ padding-right: 15px;
   }
 `;
 
-export const StyledHeroBtnWrap = styled.div`
-  width: inherit;
-  display: flex;
-  justify-content: space-between;
-`;
-
-export const StyledMovieCaption = styled.p`
-  font-size: 24px;
-`;
 export const StyledHeroTitle = styled.p`
   color: white;
   font-size: 16px;

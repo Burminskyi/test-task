@@ -1,5 +1,8 @@
-import { Navbar, Container, Form } from "react-bootstrap";
+import { useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { Navbar, Container, Form } from "react-bootstrap";
+
+import { setThemeStyle } from "../../redux/Theme/slice";
 
 import {
   StyledBrandName,
@@ -14,8 +17,6 @@ import {
 } from "./NavBar.styled";
 
 import logo from "./header-logo.svg";
-import { useDispatch } from "react-redux";
-import { setThemeStyle } from "../../redux/Theme/slice";
 
 const NavBar = () => {
   const dispatch = useDispatch();

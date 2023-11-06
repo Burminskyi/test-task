@@ -29,15 +29,6 @@ export const StyledCatalogContainer = styled.div`
   }
 `;
 
-export const StyledWeeklyTrendsHeader = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-`;
-
 export const PaginationBtn = styled.button`
   display: block;
   margin: auto;

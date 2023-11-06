@@ -1,12 +1,12 @@
 import { useEffect } from "react";
 
+import { CarDetails } from "./CarDetails";
+
 import {
   StyledCloseModalBtn,
   StyledModal,
   StyledModalOverlay,
 } from "./ModalPage.styled";
-
-import { CarDetails } from "./CarDetails";
 
 export const ModalPage = ({ data, onClose }) => {
   useEffect(() => {

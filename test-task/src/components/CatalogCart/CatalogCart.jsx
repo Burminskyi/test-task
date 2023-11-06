@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
+import { ModalPage } from "../ModalPage/ModalPage";
+
+import {
+  removeFromFavoriteCars,
+  setFavoriteCars,
+} from "../../redux/Cars/slice";
+import { selectFavoriteCars } from "../../redux/Cars/selectors";
+
 import {
   FavoriteBtn,
   StyledCarInfoWrap,
@@ -9,15 +17,8 @@ import {
   StyledCartImage,
   StyledCatalogCart,
 } from "./CatalogCart.styled";
-import { ModalPage } from "../ModalPage/ModalPage";
-import {
-  removeFromFavoriteCars,
-  setFavoriteCars,
-} from "../../redux/Cars/slice";
-import { selectFavoriteCars } from "../../redux/Cars/selectors";
 
 export const CatalogCart = ({ data }) => {
-  console.log("data: ", data);
   const favoriteCars = useSelector(selectFavoriteCars);
   const [showModal, setShowModal] = useState(false);
 
