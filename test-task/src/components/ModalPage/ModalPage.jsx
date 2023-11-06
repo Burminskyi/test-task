@@ -10,6 +10,8 @@ import {
 
 export const ModalPage = ({ data, onClose }) => {
   useEffect(() => {
+    document.body.classList.add("no-scroll");
+
     const keyDown = (e) => {
       if (e.code === "Escape") {
         onClose();
@@ -18,6 +20,8 @@ export const ModalPage = ({ data, onClose }) => {
     window.addEventListener("keydown", keyDown);
 
     return () => {
+      document.body.classList.remove("no-scroll");
+
       window.removeEventListener("keydown", keyDown);
     };
   }, [onClose]);
@@ -29,9 +33,9 @@ export const ModalPage = ({ data, onClose }) => {
   };
 
   return (
-    <StyledModalOverlay onClick={onOverlayClick}>
+    <StyledModalOverlay className="scrollable" onClick={onOverlayClick}>
       <StyledModal id="Modal">
-        <StyledCloseModalBtn variant="white" onClick={onClose} />
+        <StyledCloseModalBtn variant="black" onClick={onClose} />
         <CarDetails data={data} />
       </StyledModal>
     </StyledModalOverlay>

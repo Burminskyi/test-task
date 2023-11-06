@@ -21,7 +21,7 @@ export const StyledModal = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   max-height: 100%;
-  background-color: var(--black);
+  background-color: var(--white);
   box-shadow: 1px 1px 14px 4px var(--blue);
   border-radius: 16px;
   -ms-overflow-style: none;
@@ -33,7 +33,7 @@ export const StyledModal = styled.div`
 `;
 
 export const StyledCarDetailsContainer = styled.div`
-  color: #fff;
+  color: var(--black);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -93,12 +93,22 @@ export const StyledModalBtn = styled.a`
   border-radius: 12px;
   background: #3470ff;
   color: var(--White, #fff);
-  font-family: Manrope;
+
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 20px; /* 142.857% */
   &:hover {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     background: #0b44cd;
   }
+`;
+
+export const StyledThirdModalWrap = styled.div`
+  display: flex;
+  padding: 7px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 35px;
+  background: #f9f9f9;
 `;

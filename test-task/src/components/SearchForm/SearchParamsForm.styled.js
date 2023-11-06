@@ -32,7 +32,7 @@ export const StyledSearchFormInput = styled.input`
   }
   &::placeholder {
     color: #121417;
-    font-family: Manrope;
+
     font-size: 18px;
     font-weight: 500;
     line-height: 20px;
@@ -45,7 +45,7 @@ export const StyledCarSelect = styled.select`
   border-radius: 14px;
   background: #f7f7fb;
   color: #121417;
-  font-family: Manrope;
+
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
@@ -62,7 +62,7 @@ export const StyledCarSelect = styled.select`
 
 export const StyledCarSelectTitle = styled.p`
   color: #8a8a89;
-  font-family: Manrope;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
@@ -89,11 +89,12 @@ export const StyledSearchBtn = styled.button`
   border-radius: 12px;
   background: #3470ff;
   color: var(--White, #fff);
-  font-family: Manrope;
+
   font-size: 14px;
   font-weight: 600;
   line-height: 20px; /* 142.857% */
   &:hover {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     background: #0b44cd;
   }
   @media (min-width: 624px) {

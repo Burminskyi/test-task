@@ -7,7 +7,7 @@ export const StyledCatalogCart = styled.div`
   height: 426px;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   border-radius: 14px;
   &:hover {
     transform: scale(1.02) translateZ(0);
@@ -36,45 +36,51 @@ export const StyledCarInfoWrap = styled.div`
   padding-left: 10px;
   padding-right: 10px;
 
-  font-family: Manrope;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
+  &.modalText{
+    padding-left: 0;
+    padding-right: 0;
+  }
 `;
 
 export const StyledCarTagsWrap = styled.div`
+  color: #8a8a89;
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
   flex-wrap: wrap;
   row-gap: 4px;
-  column-gap: 12px;
-  font-family: Manrope;
+  column-gap: 6px;
+
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 18px; /* 150% */
+
+  p:not(:last-child)::after {
+    content: "|";
+    margin-left: 6px; /* Расстояние между символом | и следующим элементом <p> */
+  }
 `;
 
 export const StyledCartBtn = styled.button`
   border: none;
   display: flex;
-  width: inherit;
+  width: 254px;
   height: 44px;
   padding-top: 12px;
   padding-bottom: 12px;
+  margin-bottom: 10px;
   justify-content: center;
   align-items: center;
   border-radius: 12px;
   background: #3470ff;
   color: var(--White, #fff);
-  font-family: Manrope;
+
   font-size: 14px;
   font-style: normal;
-  font-weight: 600;
   line-height: 20px; /* 142.857% */
   &:hover {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     background: #0b44cd;
   }
   &.modalBtn {
@@ -82,7 +88,6 @@ export const StyledCartBtn = styled.button`
     width: fit-content;
   }
 `;
-
 
 export const FavoriteBtn = styled.button`
   position: absolute;

@@ -12,6 +12,7 @@ export const StyledNavbarBrand = styled(NavbarBrand)`
   font-weight: 500;
   margin-right: 60px;
   &:hover {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     color: #3497ff;
   }
@@ -48,6 +49,7 @@ export const StyledNavList = styled(Nav)`
 
 export const StyledNavLink = styled(NavLink)`
   &:hover {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--blue);
   }
 `;
@@ -59,6 +61,7 @@ export const StyledThemeSwitcher = styled(FormCheck)`
       border-color: var(--blue);
     }
     &:focus {
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
       border-color: var(--blue);
       box-shadow: 0 0 0 0.25rem rgba(52, 112, 255, 0.25);
       background-image: var(--bs-form-switch-bg);

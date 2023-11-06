@@ -31,6 +31,7 @@ export const StyledErrorPageNavigationItem = styled(Link)`
   font-size: 30px;
   text-decoration: none;
   &:hover {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     color: #0a58ca;
   }
 `;

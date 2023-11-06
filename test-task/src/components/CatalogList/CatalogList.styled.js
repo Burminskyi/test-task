@@ -35,16 +35,16 @@ export const PaginationBtn = styled.button`
   border: none;
   background: transparent;
   color: #3470ff;
-  font-family: Manrope;
-  font-size: 16px;
-  font-style: normal;
+
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   text-decoration-line: underline;
   &:hover {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     color: #0b44cd;
   }
   &:focus {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     color: #0b44cd;
   }
   &:active {

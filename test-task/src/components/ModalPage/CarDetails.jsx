@@ -5,6 +5,7 @@ import {
   StyledModalBtn,
   StyledModalImage,
   StyledSecondModalWrap,
+  StyledThirdModalWrap,
 } from "./ModalPage.styled";
 import {
   StyledCarInfoWrap,
@@ -19,7 +20,7 @@ export const CarDetails = ({ data }) => {
     <StyledCarDetailsContainer>
       <StyledModalImage src={data.img} alt="image" />
       <StyledFirstModalWrap>
-        <StyledCarInfoWrap>
+        <StyledCarInfoWrap className="modalText">
           <p>{`${data.make} ${data.model}, ${data.year}`}</p>
         </StyledCarInfoWrap>
         <StyledCarTagsWrap>
@@ -46,7 +47,7 @@ export const CarDetails = ({ data }) => {
         <p>Rental Conditions:</p>
         <StyledCarTagsWrap>
         {conditions.map((item, index) => (
-            <p key={index}>{item}</p>
+            <StyledThirdModalWrap><p key={index}>{item}</p></StyledThirdModalWrap>
           ))}
         </StyledCarTagsWrap>
       </StyledSecondModalWrap>

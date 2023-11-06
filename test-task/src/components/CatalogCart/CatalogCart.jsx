@@ -8,15 +8,7 @@ import {
   setFavoriteCars,
 } from "../../redux/Cars/slice";
 import { selectFavoriteCars } from "../../redux/Cars/selectors";
-
-import {
-  FavoriteBtn,
-  StyledCarInfoWrap,
-  StyledCarTagsWrap,
-  StyledCartBtn,
-  StyledCartImage,
-  StyledCatalogCart,
-} from "./CatalogCart.styled";
+import { FavoriteBtn, StyledCarInfoWrap, StyledCarTagsWrap, StyledCartBtn, StyledCartImage, StyledCatalogCart } from "./CatalogCart.styled";
 
 export const CatalogCart = ({ data }) => {
   const favoriteCars = useSelector(selectFavoriteCars);

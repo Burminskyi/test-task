@@ -52,8 +52,7 @@ padding-right: 15px;
 `;
 
 export const StyledHeroTitle = styled.p`
-  color: white;
-  font-size: 16px;
+color: var(--white);
   font-weight: 500;
   margin-bottom: 10px;
   @media (min-width: 700px) {
