@@ -51,3 +51,9 @@ export const PaginationBtn = styled.button`
     color: #0b44cd;
   }
 `;
+
+export const StyledEmptyFavorites = styled.p`
+  text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+`;

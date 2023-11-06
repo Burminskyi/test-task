@@ -9,22 +9,29 @@ import {
   StyledCarsList,
   StyledCatalogContainer,
   StyledCatalogList,
+  StyledEmptyFavorites,
 } from "../../components/CatalogList/CatalogList.styled";
 
 const Favorites = () => {
   const favoriteCars = useSelector(selectFavoriteCars);
+  console.log("favoriteCars: ", favoriteCars.length);
 
   return (
     <>
       <Hero />
       <StyledCarsList>
         <StyledCatalogContainer>
-          <StyledCatalogList>
-            {favoriteCars &&
-              favoriteCars.map((car) => (
+          {favoriteCars.length > 0 ? (
+            <StyledCatalogList>
+              {favoriteCars.map((car) => (
                 <CatalogCart key={car.id} data={car} />
               ))}
-          </StyledCatalogList>
+            </StyledCatalogList>
+          ) : (
+            <StyledEmptyFavorites>
+              You haven't added any cars to favorites yet
+            </StyledEmptyFavorites>
+          )}
         </StyledCatalogContainer>
       </StyledCarsList>
     </>
