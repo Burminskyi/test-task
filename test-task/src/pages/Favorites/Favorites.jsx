@@ -14,7 +14,6 @@ import {
 
 const Favorites = () => {
   const favoriteCars = useSelector(selectFavoriteCars);
-  console.log("favoriteCars: ", favoriteCars.length);
 
   return (
     <>
